@@ -1,7 +1,7 @@
 #include <stdint.h>
-	#define RCC_BASE 0x40021000
-	#define GPIOA_BASE 0x50000000
-	#define TIM6_BASE 0x40001000
+	#define RCC_BASE 0x40021000 //Base address of clock
+	#define GPIOA_BASE 0x50000000 //Base address of PORT A
+	#define TIM6_BASE 0x40001000 //Timer Base
 	#define NVIC_ISER0 ((volatile uint32_t*)0xE000E100)
 	#define RCC_IOPENR (*(volatile uint32_t*)(RCC_BASE + 0x34))
 	#define RCC_APB1ENR (*(volatile uint32_t*)(RCC_BASE + 0x3C))
@@ -71,3 +71,4 @@
 
 		}
 	}
+
